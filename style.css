@@ -12,6 +12,11 @@
     position: relative;
 }
 
+.footer{
+    background-position: center;
+    text-align: center;
+    position:relative;
+}
 nav{
     display: flex;
     padding: 2% 6%;
