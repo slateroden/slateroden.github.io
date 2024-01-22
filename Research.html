@@ -15,12 +15,14 @@
 <body style="margin:0; background-size: 100%; background-color:rgb(0, 0, 0);">
 
 <!--First section-->
-<section class="Research_Header"> 
+<section class="header"> 
     <div class= "div1" style="background-image: url('https://i2.wp.com/astrophotography-telescope.com/wp-content/uploads/2017/08/ngc1300-spiral-galaxy-hubble.jpg?resize=1900%2C1229'); 
      background-size: cover; height:600px; padding-top:5px; text-align: center;">
         <!-- <img src="images/slater.png" style="height:150px; border-radius: 50%; border: 10px solid #040811; padding-top:80px;"> -->
             <nav>
-                <div class="nav-links">
+                <a href="index.html"> <img src="http://www.montana.edu/creativeservices/images/MSU-horiz.png" ></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li style="font-size:20px; color:white; margin:10px;"> <a style="color:#ffffff;" href="index.html">HOME</a></li>
                         <li> <a style="color:#ffffff;" href="Research.html">RESEARCH</a></li>
@@ -28,13 +30,30 @@
                         <li> <a style="color:#ffffff;" href="Contact.html"> CONTACT</a></li>
                     </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
         <h1 class= "h1">SLATER ODEN</h1>
-        <p class= "p1"><em>PhD Physics Student at Montana State University (MSU)</em></p>
+        <p class= "p1"><em>Physics PhD Graduate Student</em></p>
         <p style="font-size: 20px; color:#ffffff;"> <a style="color:#ffffff;" href="https://www.physics.montana.edu/" class="hero-btn">MSU Physics Webpage</a></p>
-        <a class="logo" href="index.html"> <img src="http://www.montana.edu/creativeservices/images/MSU-horiz.png" style="height:150px; margin:25px;"></a>
+        <!-- <a class="logo" href="index.html"> <img src="http://www.montana.edu/creativeservices/images/MSU-horiz.png" style="height:150px; margin:25px;"></a> -->
     </div>
 </section>
+
+<!-- JavaScript for Toggle Menu -->
+<script>
+
+    var navLinks = document.getElementById('navLinks');
+
+    function showMenu(){
+        navLinks.style.right="0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+        
+    }
+
+</script>
 
 
 <!-- Second Section-->
@@ -111,8 +130,8 @@
 
 
   <!--Footer--> 
-<footer style="height: auto; margin:50px; background-color:#000860;">
-    <h1 class="footer" style="color: #ffffff; text-align: center;"> This website is coded by Slater Oden using html</h1>
+<footer class="footer"; style="height: auto; margin:50px; background-color:#000860;">
+    <h1 style="color: #ffffff; text-align: center;"> This website is coded by Slater Oden using html</h1>
 </footer>
 
 

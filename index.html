@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
     </head>
 
 <body style="margin:0; background-size: 100%; background-color:rgb(0, 0, 0);">
@@ -17,10 +18,12 @@
     <!--First section-->
 <section class="header"> 
     <div class= "div1" style="background-image: url('https://www.universetoday.com/wp-content/uploads/2009/05/Panoramic_Large_and_Small_Magellanic_Clouds.jpg'); 
-     background-size: cover; height:615px; padding-top:5px; text-align: center;">
-        <!-- <img src="images/slater.png" style="height:150px; border-radius: 50%; border: 10px solid #040811; padding-top:80px;"> -->
+     background-size: cover; height:600px; padding-top:5px; text-align: center;">
+
             <nav>
-                <div class="nav-links">
+                <a href="index.html"> <img src="http://www.montana.edu/creativeservices/images/MSU-horiz.png" ></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li style="font-size:20px; color:white; margin:10px;"> <a style="color:#ffffff;" href="index.html">HOME</a></li>
                         <li> <a style="color:#ffffff;" href="Research.html">RESEARCH</a></li>
@@ -28,19 +31,39 @@
                         <li> <a style="color:#ffffff;" href="Contact.html"> CONTACT</a></li>
                     </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
+
         <h1 class= "h1">SLATER ODEN</h1>
-        <p class= "p1"><em>PhD Physics Student at Montana State University (MSU)</em></p>
+        <p class= "p1"><em>Physics PhD Graduate Student</em></p>
         <p style="font-size: 20px; color:#ffffff;"> <a style="color:#ffffff;" href="https://www.physics.montana.edu/" class="hero-btn">MSU Physics Webpage</a></p>
-        <a class="logo" href="index.html"> <img src="http://www.montana.edu/creativeservices/images/MSU-horiz.png" style="height:150px; margin:25px;"></a>
+        <!-- <a class="logo" href="index.html"> <img src="http://www.montana.edu/creativeservices/images/MSU-horiz.png" style="height:150px; margin:25px;"></a> -->
+
     </div>
+
 </section>
 
 
-<!--Second section-->
-<img src="https://media.licdn.com/dms/image/D5603AQHuVgzR2idx3w/profile-displayphoto-shrink_400_400/0/1683587207691?e=1710979200&v=beta&t=1biExV2X61QgSCaWJei82PQ5jg0_IIeGhxNYjJp75d0" style="height:400px; padding-top:10px; margin:50px; float: left;" alt="Slater Oden headshot">
+<!-- JavaScript for Toggle Menu -->
+<script>
 
-<div style="height:600px; padding-bottom:10px; margin:50px;">
+    var navLinks = document.getElementById('navLinks');
+
+    function showMenu(){
+        navLinks.style.right="0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+        
+    }
+
+</script>
+
+<!--Second section-->
+<img class= "Image_ME"; src="https://media.licdn.com/dms/image/D5603AQHuVgzR2idx3w/profile-displayphoto-shrink_400_400/0/1683587207691?e=1710979200&v=beta&t=1biExV2X61QgSCaWJei82PQ5jg0_IIeGhxNYjJp75d0" alt="Slater Oden headshot">
+
+<div class = 'about_me'; style="height:600px; padding-bottom:10px; margin:50px;">
     <h1 style="color:#ffffff;">About Me </h1>
     <p style="line-height: 2.0; font-size:20px; color:#ffffff; margin:10px">I am currently a Physics PhD graduate student at Montana State University (MSU), working with Dr. David Nidever on the broad topic of Galaxy evolution and growth. Specifically, I am
         studying the largest dwarf satellite galaxies of the Milky Way (MW), the Large and Small Magellanic Clouds (LMC and SMC),
@@ -53,9 +76,9 @@
 
 
   <!--Third section-->
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Large_Magellanic_Cloud_rendered_from_Gaia_EDR3_without_foreground_stars.png/1200px-Large_Magellanic_Cloud_rendered_from_Gaia_EDR3_without_foreground_stars.png?20210420035340" style="height:600px; margin:50px; float: right;" alt="Large Magellanic Cloud (LMC)">
+<img class='gaia_MC'; src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Large_Magellanic_Cloud_rendered_from_Gaia_EDR3_without_foreground_stars.png/1200px-Large_Magellanic_Cloud_rendered_from_Gaia_EDR3_without_foreground_stars.png?20210420035340" style="height:600px; margin:50px; float: right;" alt="Large Magellanic Cloud (LMC)">
 
-<div style="height:650px; margin:50px">
+<div class='research_overview'; style="height:650px; margin:50px">
     <h1 style="color:#ffffff;">Research Overview</h1>
     <p style="line-height: 2.0; font-size:20px; color:#ffffff;">My current research entails using photometric data taken with the MOSAIC II camera on the 
         Cerro Tololo Inter-American Observatory (CTIO) 4-meter Blanco telescope using the Washington M , T2 and the
@@ -92,9 +115,9 @@
 </div> -->
 
 
-<!--Footer--> 
-<footer style="height: auto; margin:50px; background-color:#000860;">
-    <h1 class="footer" style="color: #ffffff; text-align: center;"> This website is coded by Slater Oden using html</h1>
+  <!--Footer--> 
+  <footer class="footer"; style="height: auto; margin:50px; background-color:#000860;">
+    <h1 style="color: #ffffff; text-align: center;"> This website is coded by Slater Oden using html</h1>
 </footer>
 
 </body>
