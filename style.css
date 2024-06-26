@@ -548,12 +548,14 @@ nav .fa{
         text-align: left;
         color:#ffffff;
         font-size:25px;
+        margin: 8px;
 
     }
     
     .research_overview_text{
         line-height: 1.5; 
         font-size:15px; 
+        margin: 8px;
         color:#ffffff;
     }
 
@@ -589,10 +591,8 @@ nav .fa{
     }
 
     .gaia_MC{
-        padding-top:20px;
-        padding-bottom: none;
-        padding-left: none;
-        height:300px; 
+        margin: 25px;
+        height:200px; 
         /* width: 325px; */
         float: center;
     }
