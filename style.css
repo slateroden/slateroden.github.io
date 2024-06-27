@@ -774,7 +774,7 @@ input[type=text], input[type=email], textarea {
     }
 
     .cv{
-        height: 800px;
+        /* height: 800px; */
     }
 
     .about_me{
