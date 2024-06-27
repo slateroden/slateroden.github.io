@@ -38,22 +38,22 @@
     width: 100%;
     background-position: center;
     background-size: cover;
-    position: relative;
+    /* position: relative; */
 }
 
 .welcome_section{
     background-position: center;
     text-align: center;
-    height: 500px;
+    height: 550px;
     background-color:#ffffff;
     /* padding-top:20x;
     padding-bottom: 20px; */
 }
 
 .h2_welcome{
-    margin: 50px;
-    padding-top: 5%;
-    /* padding-bottom: 50px; */
+    /* margin: 50px; */
+    padding-top: 3%;
+    padding-bottom: 3%;
     font-size: 100px;
 
 }
@@ -205,40 +205,81 @@
 }
 
 .Image_ME{
-    width: 420px;
-    height: 500px;
-    padding-top:5%; 
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom:5% ;
-    margin:50px; 
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .about_me{
-    height:400px;
+    height:600px;
     background-color:#ffffff;
 
 }
 
 .about_me_text{
-    font-size: 75px;
+    font-size: 60px;
     color: #000000;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom:5% ;
-    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2% ;
+    padding-top: 2%;
 }
 
 .about_me_text2{
-    font-size: 50px;
+    font-size: 45px;
     color: #000000;
     text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom:2% ;
+    padding-top: 2%;
+}
+
+.personal_stuff{
+    height: 350px;
+    background-color: #8a8a8a;
+}
+
+.personal_stuff_h5{
+    font-size: 25px;
+    color: #000000;
+    padding-left: 3%;
+    padding-top: 3% ;
+}
+
+.personal_stuff_h5_2{
+    font-size: 25px;
+    color: #000000;
+    padding-left: 3%;
+    padding-top: 3% ;
+}
+
+.personal_stuff_hobbies_list{
     padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom:5% ;
-    padding-top: 5%;
+}
+
+.personal_stuff_list{
+    padding-left: 5%;
+}
+
+.split{
+    width: 50%;
+    float:left;
+}
+
+.contact_area{
+    width: 50%;
+    float: right;
+    /* padding-top: 2%; */
+}
+
+.contact_area_h{
+    font-size: 25px;
+    color: #000000;
+    /* padding-left: 3%; */
+    padding-top: 3% ;
+
 }
 
 .MSU_logo{
@@ -257,6 +298,7 @@
 .research_overview{
     padding-top:20x;
     padding-bottom: 20px;
+    height: 850px;
 }
 
 nav{
@@ -427,6 +469,34 @@ nav .fa{
     display: none;
 }
 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], textarea {
+    width: 95%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  button[type=submit] {
+    background-color: #04AA6D;
+    font-size: 15px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  button[type=submit]:hover {
+    background-color: #45a049;
+  }
+
 
 
 @media(max-width: 800px){
@@ -441,10 +511,10 @@ nav .fa{
     .welcome_section{
         background-position: center;
         text-align: center;
-        height: 300px;
+        height: 400px;
         background-color:#ffffff;
-        /* padding-top:20x;
-        padding-bottom: 20px; */
+        /* padding-top:20x; */
+        /* margin: 50px; */
     }
 
     .h1{
@@ -452,9 +522,8 @@ nav .fa{
     }
 
     .h2_welcome{
-        margin: 0 0 10px;
-        padding-top:3%;
-        /* padding-bottom: 50px; */
+        /* margin:10px; */
+        padding-top:2%;
         font-size: 40px;
     
     }
@@ -462,7 +531,7 @@ nav .fa{
     .p_welcome{
         /* margin: 50px 0 50px; */
         padding-left: 2%;
-        padding-top: 2%;
+        padding-top: 1%;
         font-size: 15px;
         line-height: 1.0;
     }
@@ -541,7 +610,7 @@ nav .fa{
     }
 
     .research_overview{
-        height: 600px;
+        height: 700px;
     }
 
     .research_overview_header{
@@ -562,9 +631,10 @@ nav .fa{
     .Image_ME{
         width: 270px;
         height: 300px;
-        margin:50px; 
-        float: center;
-        padding-right: 100px;
+        padding-top: 3%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
     }
 
     .about_me{
@@ -635,8 +705,8 @@ nav .fa{
 
     .research_h1{
         color:#ffffff; 
-        margin:25px;
-        font-size: 30px;
+        margin:15px;
+        font-size: 20px;
     }
     
     .research_p1{
@@ -647,10 +717,10 @@ nav .fa{
     }
 
     .research_image1{
-        height:300px; 
+        height:200px; 
         /* padding-top:5px;  */
-        margin: 25px; 
-        float: right;
+        margin: 15px; 
+        float: center;
     }
 
     .research_h_undergrad{
@@ -661,16 +731,15 @@ nav .fa{
     }
     
     .research_image2{
-        height:300px; 
-        padding-top:10px; 
-        padding-bottom:10px; 
-        margin: 15px; 
+        height:150px; 
+        padding-bottom: 10px;
         float: left;
     }
     
     .research_h_3{
         color:#ffffff; 
         margin:15px;
+        font-size: 20px;
     }
     
     .research_p_3{
@@ -681,14 +750,14 @@ nav .fa{
     }
 
     .research_section_4{
-        height: 400px;
+        height: 750px;
     }
     
     .research_image3{
         height:150px; 
         padding-bottom:10px; 
         margin: 25px; 
-        float: right;
+        justify-content: center;
     }
     
     .research_h4{
@@ -702,6 +771,89 @@ nav .fa{
         font-size: 15px; 
         color:#ffffff;
         margin: 15px;
+    }
+
+    .cv{
+        height: 800px;
+    }
+
+    .about_me{
+        height:350px;
+        background-color:#ffffff;
+    
+    }
+    
+    .about_me_text{
+        font-size: 30px;
+        color: #000000;
+        text-align: center;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 1% ;
+        padding-top: 1%;
+    }
+    
+    .about_me_text2{
+        font-size: 20px;
+        color: #000000;
+        text-align: center;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom:1% ;
+        padding-top: 1%;
+    }
+
+    .Image_ME{
+        height: 200px;
+        width: 180px;
+    }
+    
+    .personal_stuff{
+        height: 300px;
+        background-color: #8a8a8a;
+    }
+    
+    .personal_stuff_h5{
+        font-size: 15px;
+        color: #000000;
+        padding-left:2%;
+        padding-top: 2% ;
+    }
+    
+    .personal_stuff_h5_2{
+        font-size: 15px;
+        color: #000000;
+        padding-left: 2%;
+        padding-top: 2% ;
+    }
+    
+    .personal_stuff_hobbies_list{
+        padding-left: 10%;
+        font-size: 10px;
+    }
+    
+    .personal_stuff_list{
+        padding-left: 10%;
+        font-size: 10px;
+    }
+    
+    .split{
+        width: 50%;
+        float:left;
+    }
+    
+    .contact_area{
+        width: 50%;
+        float: right;
+        /* padding-top: 2%; */
+    }
+    
+    .contact_area_h{
+        font-size: 15px;
+        color: #000000;
+        /* padding-left: 3%; */
+        padding-top: 2% ;
+    
     }
        
     

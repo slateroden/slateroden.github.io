@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SLATER ODEN</title>
+        <link rel="shortcut icon" type="image/png" href="https://www.littlethingstravel.com/wp-content/uploads/2015/07/Little-Things-Travel-Blog-favicon-globe.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+    </head>
+
+<body style="margin:0; background-size: 100%; background-color:rgb(0, 0, 0);">
+
+    <!--First section-->
+<section class="header"> 
+    <div class= "div1_aboutme" style="background-image: url('https://storage.googleapis.com/chile-travel-static-content/2016/04/Las-Campanas-SACT05.jpg');">
+        <!-- <img src="images/slater.png" style="height:150px; border-radius: 50%; border: 10px solid #040811; padding-top:80px;"> -->
+            <nav>
+                <a target="_blank" href="https://www.physics.montana.edu/" class="MSU_logo"> <img src="http://www.montana.edu/creativeservices/images/MSU-horiz.png" ></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li style="font-size:20px; color:white; margin:10px;"> <a style="color:#ffffff;" href="index.html">HOME</a></li>
+                        <li> <a style="color:#ffffff;" href="Research.html">RESEARCH</a></li>
+                        <li> <a style="color:#ffffff;" href="CV.html">CURRICULUM VITAE</a></li>
+                        <li> <a style="color:#ffffff;" href="About.html"> ABOUT ME</a></li>
+                    </ul>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </div>
+            </nav>
+        <h1 class= "h1" style="text-align:center;" center;> About Slater</h1>
+        <!-- <a class="logo" href="index.html"> <img src="http://www.montana.edu/creativeservices/images/MSU-horiz.png" style="height:150px; margin:25px;"></a> -->
+    </div>
+</section>
+
+
+<!-- JavaScript for Toggle Menu -->
+<script>
+
+    var navLinks = document.getElementById('navLinks');
+
+    function showMenu(){
+        navLinks.style.right="0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+        
+    }
+
+</script>
+
+
+<!-- Second Section-->
+
+<section class='about_me';>
+    <h4 class='about_me_text';> I like mountains, music, and books </h4>
+    <p class="about_me_text2">
+     Here is a semi-recent picture of me!
+    </p>
+    <img class='Image_ME'; src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgieRTIKNFmcbLBX0p7U2H5WtqARtCzwm0aYihikLIL6AfvWdSBTaETqittFpq-bYMUEWcfKOgATb-qhghzQ_G8kYgNmLW98LeuRiHxQWn_SMb11Y_NUTRJGCvWg4G9tdQHQgQt2_5lU8tBiEefpQOgUPNULu2tOljBuVi0E7Qw779m1D3w5Gl3k2MlDg/s320/slateroden_pic.png" alt="Slater Oden Picture">
+</section>
+
+<!-- Third Section-->
+
+<section class="personal_stuff">
+    <div class="split">
+        <h5 class="personal_stuff_h5"> Hobbies </h5>
+        <ul class="personal_stuff_hobbies_list">        
+            <li> The great outdoors! Hiking, fishing, camping, climbing, hunting.</li>
+            <li> Playing guitar and learning new music. </li>
+            <li> Reading books. I love new book suggestions. </li>
+        </ul>
+    
+    
+        <h5 class="personal_stuff_h5_2"> Personal Stuff </h5>
+    
+        <ul class="personal_stuff_list">
+            <li>Check out my church <a href="https://redeemerbozeman.org/"> here </a> in Bozeman </li>
+            <li><a href="https://apod.nasa.gov/apod/">Here</a> is a cool space photo updated everyday! </li>
+            <li> Check out my linkedin profile <a href="https://www.linkedin.com/in/slater-oden-60a048157/"> here</a> </li>
+        </ul>
+    </div>
+
+
+<div class="contact_area">   
+    
+    <h3 class="contact_area_h"> Get in Contact with me! </h3>
+
+    <form action="https://formsubmit.co/odensater8@gmail.com" method="POST">
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="name" placeholder = "Your name" required>
+    <input type="email" name="email" placeholder = "Your email" required>
+    <textarea name="message" placeholder="Your message here"> </textarea>
+    <button type="submit">Send</button>
+
+    </form>
+
+</div>
+
+
+</section>
+
+
+
+
+  <!--Footer-->
+  <footer class="footer";>
+    <p class='footer_text';> All rights reserved</p>
+</footer>
+
+</body>
+
+</html>
