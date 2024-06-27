@@ -439,32 +439,6 @@ nav img{
     transition: 1s;
 }
 
-.mcintoch2014{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    /* padding: 12px 34px; */
-    font-size: 20px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-
-
-.mcintoch2014::after{
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #ffffff;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-
-.mcintoch2014:hover::after{
-    width: 100%;
-}
-
 nav .fa{
     display: none;
 }
@@ -771,10 +745,6 @@ input[type=text], input[type=email], textarea {
         font-size: 15px; 
         color:#ffffff;
         margin: 15px;
-    }
-
-    .cv{
-        /* height: 800px; */
     }
 
     .about_me{
