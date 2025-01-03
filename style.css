@@ -49,12 +49,13 @@
 }
 
 .welcome_section{
-    background-position: center;
     text-align: center;
-    height: 650px;
+    display: flex; /* Enables Flexbox layout */
+    flex-direction: column; /* Ensures elements are stacked vertically */
+    align-items: center; /* Centers content horizontally */
+    justify-content: flex-start; /* Aligns content at the top */
+    padding: 20px;
     background-color:#ffffff;
-    /* padding-top:20x;
-    padding-bottom: 20px; */
 }
 
 .h2_welcome{
@@ -103,6 +104,7 @@
     font-size: 25px;
 }
 
+
 /* .current_projects_div{
     height: 100px;
 } */
@@ -113,33 +115,92 @@
     padding-bottom: 2.5%;
     text-align: center;
     color: #ffffff;
+    font-weight: bold;
 }
 
-.MAPS_image{
-    height:600px; 
-    padding-bottom:5%; 
-    padding-top:11%; 
-    margin: 25px; 
-    float: right; 
-}
 
-.NA_image{
-    height:300px; 
+/* .NA_image{
+    height:200px; 
+    display: flex;
     padding-bottom:15%; 
     padding-top:13%; 
     padding-right:0.5%;
     padding-left:0.5%;  
     margin: 25px; 
     float: left; 
+} */
+
+
+/* Section with Background Image */
+.research_section {
+    position: relative;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Large_Magellanic_Cloud_rendered_from_Gaia_EDR3_without_foreground_stars.png/1200px-Large_Magellanic_Cloud_rendered_from_Gaia_EDR3_without_foreground_stars.png?20210420035340');
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Optional: Parallax effect */
+    padding: 100px 20px; /* Add padding for spacing */
+    color: #ffffff; /* White text for contrast */
 }
 
+/* Text Overlay with Background */
+.text_overlay {
+    position: relative; /* Position within the section */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black for readability */
+    padding: 40px; /* Padding around text */
+    max-width: 900px; /* Optional: Limit text width */
+    margin: 0 auto; /* Center the text container */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Headers and Text Styling */
+.research_overview_header {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.research_overview_header2, .interets{
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.research_overview_text,
+.research_overview_text2,
+.comp_paper_text, .interets_p{
+    font-size: 1.25rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* .comp_paper_text{
+    margin-top: 50px;
+    line-height: 1.5; 
+} */
+
+/* Links */
+.comp_paper_text a {
+    color: #526fff;
+    text-decoration: underline;
+}
+
+
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+}
+
+
 .research_overview{
-    height:1500px; 
+    /* height:1500px;  */
     margin:25px
 }
 
 .research_overview2{
-    height:625px; 
+    /* height:625px;  */
     margin:25px;
     padding-top: 5%;
 }
@@ -157,8 +218,8 @@
 }
 
 .research_overview_text{
-    height: 400px;
-    line-height: 2.0; 
+    /* height: 400px; */
+    line-height: 1.5; 
     margin: 25px;
     font-size:25px; 
     padding-bottom: 100px;
@@ -166,92 +227,148 @@
 }
 
 .research_overview_text2{
-    height: 400px;
-    line-height: 2.0; 
+    /* height: 400px; */
+    line-height: 1.5; 
     margin: 25px;
     font-size:25px; 
     color:#ffffff;
 }
 
 .comp_paper_text{
-    /* height: 400px; */
-    line-height: 2.0; 
+    line-height: 1.5; 
     margin: 5%;
     font-size:25px; 
-    /* padding-bottom: 100px; */
+    padding-bottom: 50px;
+    padding-top: 50px;
     text-align: center;
     color:#ffffff;
 }
 
+.interests_p{
+    text-align: center;
+    justify-content: center;
+    font-size:23px; 
+}
+
+
 .research_image1{
-    height:600px; 
-    /* padding-top:5px;  */
-    margin: 25px; 
-    float: right;
+    max-width: 45%; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image fits neatly */
+    margin-top: 0.5em; /* Optional: Fine-tune alignment with the text */
 }
 
 .MAPS_h1{
     color:#ffffff; 
-    margin:25px;
+    margin: 25px;
     font-size: 50px;
+    font-weight: bold;
+    /* display: inline-block; */
 }
 
 .MAPS_p1{
-    line-height: 2.0; 
-    font-size:20px; 
+    line-height: 1.5; 
+    font-size: 25px; 
     color:#ffffff;
-    margin:25px;
+    margin: 25px;
+    float: left;
 }
 
-.NA_h1{
-    color:#ffffff; 
-    margin:25px;
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 20px; /* Space between the text and image */
+    padding: 20px; /* Optional: Add padding to the container */
+}
+
+.text-content {
+    flex: 1;
+    max-width: 60%; /* Adjust the width of the text section */
+}
+
+.MAPS_image {
+    max-width: 40%; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image fits neatly */
+    margin-top: 0.5em; /* Optional: Fine-tune alignment with the text */
+}
+
+.flex-container_1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 20px; /* Space between the text and image */
+    padding: 20px; /* Optional: Add padding to the container */
+}
+
+.text-content_1{
+    flex: 1;
+    max-width: 60%; /* Adjust the width of the text section */
+}
+
+.NA_image {
+    max-width: 40%; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image fits neatly */
+    margin-top: 0.5em; /* Optional: Fine-tune alignment with the text */
+}
+
+.NA_h1 {
+    color: #ffffff; 
+    margin: 25px;
     font-size: 50px;
+    font-weight: bold;
 }
 
-.NA_p1{
-    line-height: 2.0; 
-    font-size:20px; 
-    color:#ffffff;
-    margin:25px;
+.NA_p1 {
+    line-height: 1.5; 
+    font-size: 25px; 
+    color: #ffffff;
+    margin: 25px;
 }
+
 
 .research_h1{
     color:#ffffff; 
     margin:25px;
-    font-size: 50px;
+    font-size: 45px;
+    font-weight: bold;
 }
 
 .research_p1{
-    line-height: 2.0; 
-    font-size:20px; 
+    line-height: 1.5; 
+    font-size:25px; 
     color:#ffffff;
     margin:25px;
+    float: left;
 }
 
 .research_h_undergrad{
     color:#ffffff; 
-    font-size:45px; 
+    font-size:55px; 
     text-align: center;
     margin:25px;
+    font-weight: bold;
 }
 
 .research_image2{
-    height:450px; 
-    padding-top:10px; 
-    padding-bottom:200px; 
-    margin: 25px; 
-    float: left;
+    max-width: 40%; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image fits neatly */
+    margin-top: 0.5em; /* Optional: Fine-tune alignment with the text */
 }
 
 .research_h_3{
     color:#ffffff; 
     margin:25px;
+    font-weight: bold;
+    font-size: 50px; 
 }
 
 .research_p_3{
-    line-height: 2.0; 
-    font-size:20px;
+    line-height: 1.5; 
+    font-size:25px;
      color:#ffffff; 
      margin:25px;
      padding-bottom: 30px;
@@ -263,28 +380,28 @@
 }
 
 .research_image3{
-    height:300px; 
-    padding-top:8%; 
-    padding-bottom:5%; 
-    margin: 25px; 
-    float: right;
+    max-width: 45%; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image fits neatly */
+    margin-top: 0.5em; /* Optional: Fine-tune alignment with the text */
 }
 
 .research_h4{
     color:#ffffff; 
     margin:25px;
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .research_p4{
-    line-height: 2.0; 
-    font-size:20px; 
+    line-height: 1.5; 
+    font-size:25px; 
     color:#ffffff;
     margin:25px;
 }
 
 
-.footer {
+.footer{
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     justify-content: center;
@@ -303,13 +420,22 @@
 
 .Image_ME{
     display: block;
-    height:350px;
+    /* height:350px; */
     margin-left: auto;
     margin-right: auto; 
+    max-width: 20%; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image fits neatly */
+    margin-top: 0.5em; /* Optional: Fine-tune alignment with the text */
 }
 
 .about_me{
-    height:700px;
+    display: flex; /* Enables Flexbox layout */
+    flex-direction: column; /* Ensures elements are stacked vertically */
+    align-items: center; /* Centers content horizontally */
+    justify-content: flex-start; /* Aligns content at the top */
+    gap: 10px; /* Space between the text elements and the image */
+    padding: 20px; /* Optional: Adds padding around the section */
     background-color:#ffffff;
 
 }
@@ -388,7 +514,8 @@
 .gaia_MC{
     padding-top:15%;
     padding-bottom: 150px;
-    height:600px; 
+    display: flex;
+    /* height:600px;  */
     margin:50px; 
     float: right;
 }
@@ -737,7 +864,32 @@ input[type=text], input[type=email], textarea {
   }
 
 
-@media(max-width: 800px){
+@media(max-width: 768px){
+
+    .research_section {
+        padding: 50px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .text_overlay {
+        padding: 20px; /* Reduce padding */
+    }
+
+    .research_overview_header {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .research_overview_header2 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .research_overview_text,
+    .research_overview_text2,
+    .comp_paper_text {
+        font-size: 1rem;
+    }
+
 
     .div1{
         background-size: cover; 
@@ -747,12 +899,13 @@ input[type=text], input[type=email], textarea {
     }
 
     .welcome_section{
-        background-position: center;
         text-align: center;
-        height: 285px;
+        display: flex; /* Enables Flexbox layout */
+        flex-direction: column; /* Ensures elements are stacked vertically */
+        align-items: center; /* Centers content horizontally */
+        justify-content: flex-start; /* Aligns content at the top */
+        padding: 20px;
         background-color:#ffffff;
-        /* padding-top:20x; */
-        /* margin: 50px; */
     }
 
 
@@ -785,7 +938,7 @@ input[type=text], input[type=email], textarea {
     }
 
     .david_website{
-        font-size: 15px; 
+        font-size: 12px; 
         color:#000000; 
         padding-top: 2%; 
         padding-bottom: 2%;
@@ -894,31 +1047,47 @@ input[type=text], input[type=email], textarea {
 
     .comp_paper_text{
         line-height: 1.5; 
-        font-size:15px; 
+        font-size: 20px; 
         margin: 5%;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
+        padding-top: 20px;
         color:#ffffff;
     }
 
+    .interets{
+        font-size: 35px;
+    }
+
+    .interests_p{
+       font-size: 20px;
+    }
+
     .Image_ME{
-        width: 270px;
-        height: 300px;
-        padding-top: 3%;
         display: block;
+        /* height:350px; */
         margin-left: auto;
         margin-right: auto; 
+        max-width: 35%; /* Adjust the width of the image */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Ensures the image fits neatly */
+        margin-top: 0.5em; /* Optional: Fine-tune alignment with the text */ 
     }
 
     .about_me{
-        text-align: center;
-        padding-bottom: 50px;
-        padding-top: 50px;
+        display: flex; /* Enables Flexbox layout */
+        flex-direction: column; /* Ensures elements are stacked vertically */
+        align-items: center; /* Centers content horizontally */
+        justify-content: flex-start; /* Aligns content at the top */
+        gap: 10px; /* Space between the text elements and the image */
+        padding: 20px; /* Optional: Adds padding around the section */
+        background-color:#ffffff;
+    
     }
 
     .footer{
         display: flex;
         background-position: center;
-        height: 75px; 
+        /* height: 75px;  */
         background-color:#ffffff;
         justify-content: center;
         align-items: center;
@@ -932,7 +1101,7 @@ input[type=text], input[type=email], textarea {
     } */
 
     .footer_text, .footer_extra {
-        font-size: 10px;
+        font-size: 15px;
         color: #000000;
         text-align: center;
         margin: 10px 0; /* Adds some spacing between lines */
@@ -1001,30 +1170,31 @@ input[type=text], input[type=email], textarea {
     }
 
     .MAPS_image{
-        height:200px; 
-        /* padding-top:5px;  */
-        margin: 15px; 
-        float: right;
+        max-width: 40%; /* Adjust the width of the image */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Ensures the image fits neatly */
+        margin-top: 0.5em; /* Optional: Fine-tune alignment with the text */
     }
 
     .MAPS_h1{
         color:#ffffff; 
         margin:15px;
         font-size: 20px;
+        /* font-weight: bold; */
     }
 
     .MAPS_p1{
-        line-height: 1.5; 
+        line-height:1.5; 
         font-size:15px; 
         color:#ffffff;
         margin:15px;
     }
 
     .NA_image{
-        height:150px; 
-        padding-bottom:10px; 
-        margin: 25px; 
-        justify-content: center;
+        max-width: 40%; /* Adjust the width of the image */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Ensures the image fits neatly */
+        margin-top: 0.5em; /* Optional: Fine-tune alignment with the text */
     }
 
     .NA_h1{
@@ -1055,10 +1225,10 @@ input[type=text], input[type=email], textarea {
     }
 
     .research_image1{
-        height:200px; 
-        /* padding-top:5px;  */
-        margin: 15px; 
-        float: center;
+        max-width: 40%; /* Adjust the width of the image */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Ensures the image fits neatly */
+        margin-top: 0.5em; /* Optional: Fine-tune alignment with the text */
     }
 
     .research_h_undergrad{
@@ -1069,9 +1239,10 @@ input[type=text], input[type=email], textarea {
     }
     
     .research_image2{
-        height:150px; 
-        padding-bottom: 10px;
-        float: left;
+        max-width: 40%; /* Adjust the width of the image */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Ensures the image fits neatly */
+        margin-top: 0.5em; /* Optional: Fine-tune alignment with the text */
     }
     
     .research_h_3{
@@ -1092,10 +1263,10 @@ input[type=text], input[type=email], textarea {
     }
     
     .research_image3{
-        height:150px; 
-        padding-bottom:10px; 
-        margin: 25px; 
-        justify-content: center;
+        max-width: 45%; /* Adjust the width of the image */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Ensures the image fits neatly */
+        margin-top: 0.5em; /* Optional: Fine-tune alignment with the text */
     }
     
     .research_h4{
